@@ -3,7 +3,7 @@ export class Footer {
     // Detectar profundidad igual que en la Navbar
     const pathParts = window.location.pathname.split("/").filter(Boolean);
     const depth = pathParts.length - 2;
-    this.base = "../".repeat(depth);
+    this.base = "../".repeat(Math.max(0, depth));
   }
 
   render() {
