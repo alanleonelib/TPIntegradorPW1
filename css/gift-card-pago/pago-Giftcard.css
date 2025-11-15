@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.container-pago {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5rem;
+  padding: 5rem;
+  flex-wrap: wrap;
+  background-image: linear-gradient(rgba(0,0,0,0.7)), url('../../Imagenes/Imagen-de-fondo/fondo-cursos.jpg');
+}
+
+.formulario-pago form input,
+.formulario-pago form select,
+.formulario-pago form textarea {
+  width: 80%;     
+  max-width: 25em;
+  padding: 0.6em;
+  margin-bottom: 1em;
+  border: 1px solid #999999;
+  border-radius: 0.3em;
+  font-size: 1em;
+}
+
+.formulario-pago {
+  flex: 1;
+  min-width: 25em;
+  max-width: 35em; 
+  padding: 2em;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 0.5em;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.1);
+  margin: 0;  
+  color: #E0E0E0;
+}
+
+.formulario-pago h2 {
+  margin-bottom: 1em;
+  color: #ff6d00;;
+}
+
+.formulario-pago form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+
+.metodos-pago {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+}
+
+.metodos-pago label {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.metodos-pago input[type="radio"] {
+  display: none;
+}
+
+.metodos-pago img {
+  width: 100px;
+  height: 60px;
+  object-fit: contain;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background: #fff;
+  padding: 0.5em;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.metodos-pago img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.metodos-pago input[type="radio"]:checked + img {
+  transform: scale(1.1);
+  border-color: #ff6d00;
+  box-shadow: 0 0 8px rgba(255, 109, 0, 0.7);
+}
+
+#fecha-expiracion {
+  padding: 0.75em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.boton-comprar {
+  display: inline-block;
+  background-color: #ff6d00;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.8em 1.5em;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+  margin-top: 1em;
+  cursor: pointer;
+}
+
+.boton-comprar:hover {
+  background-color: #e65c00;
+  transform: translateY(-2px);
+}
+
+.preview-giftcard {
+  flex: 1;
+  min-width: 25em;
+  max-width: 35em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.preview-giftcard h3 {
+  margin-bottom: 1em;
+  color:  #ff6d00;
+  font-size: 1.5em;
+}
+
+.giftcard {
+  
+  width: 25em!important;
+  height: 15rem!important;
+  background-color: #0C2531;
+  color: #ffffff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-top: 1em;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  gap: 1em;
+
+}
+
+.giftcard-monto {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #E0E0E0;
+}
+
+.giftcard-logo {
+  width: 150px;
+  margin-bottom: 10px;
+  height: auto;
+}
+
+.giftcard-nombre {
+  font-size: 1.5em;
+  color: #E0E0E0;
+  margin: 0;
+}
+
+
+.arriba-izquierda {
+  top: 10px;
+  left: 15px;
+  right: auto;
+  bottom: auto;
+}
+
+.arriba-derecha {
+  top: 10px;
+  right: 15px;
+  left: auto;
+  bottom: auto;
+}
+
+.abajo-izquierda {
+  bottom: 10px;
+  left: 15px;
+  top: auto;
+  right: auto;
+}
+
+.abajo-derecha {
+  bottom: 10px;
+  right: 15px;
+  top: auto;
+  left: auto;
+}
+
+@media (min-width: 1024px) {
+
+
+  .container-pago {
+    gap: 4em;
+    padding: 8rem;
+  }
+
+  .giftcard {
+    width: 70%;
+    height: 20rem;
+  }
+
+  .formulario-pago,
+  .preview-giftcard {
+    max-width: 100%;
+  }
+
+  .metodos-pago {
+
+    justify-content: flex-start;
+
+
+  }
+
+
+}
+
+/* para celulares */
+@media (min-width: 768px) {
+
+
+
+}

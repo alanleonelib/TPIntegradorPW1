@@ -1,0 +1,114 @@
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+}
+/* Header */
+
+body {
+
+    width: 100%;
+
+}
+
+
+/* Calendario */
+main {
+    padding: 1rem;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-image: linear-gradient(rgba(0,0,0,0.7)), url('../Imagenes/Imagen-de-fondo/fondo-cursos.jpg');
+}
+
+h1 {
+    text-align: center;
+    color: #E0E0E0;
+    padding-bottom: 2rem;
+    font-size: 1.3rem;
+    padding-top: 2rem;
+}
+
+.calendario {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45px, 1fr)); /* columnas flexibles */
+    gap: 0.5rem; /* menos espacio entre celdas */
+    width: 100%; /* ocupa el ancho disponible */
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+.calendario::-webkit-scrollbar {
+  height: 8px;
+}
+
+.calendario::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+.dia {
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: #E0E0E0;
+}
+
+.celda {
+    height: 80px;
+    
+    border-radius: 5px;
+    padding: 5px;
+    text-align: left;
+    color: #E0E0E0;
+    text-align: center;
+}
+
+/* Cursos destacados en el calendario */
+
+.curso a {
+    color: #ff6d00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.hoy {
+    
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {   
+
+    
+}
+
+@media (min-width: 1024px) {
+
+    
+.calendario {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* columnas flexibles */
+    gap: 0.5rem; /* menos espacio entre celdas */
+    width: 100%; /* ocupa el ancho disponible */
+    box-sizing: border-box;
+    padding: 10rem;
+}
+
+h1 {
+
+    padding-top: 7rem;
+    font-size: 3rem;
+}
+
+  
+}
+

@@ -1,0 +1,41 @@
+/* colores q hay que cambiar */
+:root {
+  --azul: #96B6C5;
+  --celeste: #ADC4CE;
+  --beige: #EEE0C9;
+  --blanco: #F1F0E8;
+  --texto: #333;
+}
+
+.compras-container {
+
+
+  background-image: linear-gradient(rgba(0,0,0,0.7)), url('../Imagenes/Imagen-de-fondo/fondo.jpg');
+  height: 70rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+
+
+}
+
+.compras-container h1 {
+
+  margin-top: 8rem;
+  color: white;
+
+
+}
+
+
+.compras-hechas {
+
+
+  background-color: #0F111A;
+   height: 70%;
+   width: 80%;
+
+
+}
+

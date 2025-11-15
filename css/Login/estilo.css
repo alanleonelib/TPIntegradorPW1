@@ -1,0 +1,283 @@
+ * {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+}
+
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7)), url('../../Imagenes/Imagen-de-fondo/fondo-cursos.jpg');
+    padding: 1.5rem;
+}
+
+.contenedor{
+    display: flex;
+    width: 900px;
+    height: 550px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.seccion-bienvenida{
+    flex: 1;
+    background: linear-gradient(to right, #ff9f55, #ff6d00);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 6em;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.seccion-bienvenida .contenido{
+    z-index: 1;
+}
+
+.seccion-bienvenida h1{
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.seccion-bienvenida p{
+    font-size: 1.1em;
+    max-width: 80%;
+    margin: 0 auto;
+    font-weight: 300;
+}
+
+.shape{
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.3;
+}
+
+.shape-one {
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.2);
+    top: 10%;
+    left: 15%;
+    transform: rotate(45deg);
+}
+
+.shape-two {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.15);
+    bottom: 5%;
+    right: 10%;
+    transform: rotate(-30deg);
+}
+
+.shape-three {
+    width: 80px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.25);
+    top: 40%;
+    left: 5%;
+    transform: rotate(60deg);
+}
+
+.shape-four {
+    width: 120px;
+    height: 120px;
+    background-color: rgba(255, 255, 255, 0.1);
+    bottom: 20%;
+    left: 30%;
+    transform: rotate(90deg);
+}
+
+.seccion-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #1E1E2E;
+}
+
+.seccion-login h2{
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: white;
+    font-weight: 600;
+}
+
+.seccion-login form {
+    width: 100%;
+    max-width: 350px;
+}
+
+.grupo-input{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.grupo-input input {
+    width: 100%;
+    padding: 15px 15px 15px 50px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1em;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.grupo-input input:focus{
+    border-color: #ff6d00;
+}
+
+.opciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 0.95em;
+    color: white;
+}
+
+.opciones label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;    
+}
+
+.opciones #forgot{
+    margin-right: 8px;
+    accent-color: #0072ff;
+}
+
+#forgotpass {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding-left: 1em;
+}
+
+.opciones a:hover{
+    color: #0056b3;
+}
+
+#boton-singIn{
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(to right, #ff9f55, #ff6d00); 
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+#boton-singIn:hover{
+    opacity: 0.9;
+}
+
+.singup {
+    margin-top: 30px;
+    font-size: 0.95em;
+    color: #ff6d00;
+}
+
+.singup a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.signup-link a:hover {
+    color: #0056b3;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+
+    
+    .menu-toggle {
+        display: block; 
+        order: 2;
+    }
+
+    .menu-principal {
+        display: none; 
+        width: 100%;
+        padding: 0;
+        padding-bottom: 0;
+    }
+
+    .menu-principal-container ul {
+        flex-direction: column; 
+        align-items: center;
+        width: 100%;
+    }
+
+    .menu-principal-container li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .menu-principal-container li:last-child {
+        border-bottom: none;
+    }
+
+    .contenedor {
+        flex-direction: column; 
+        width: 90%;
+        height: auto; 
+    }
+
+    .seccion-bienvenida{
+        border-radius: 20px 20px 0 0; 
+        min-height: 250px;
+        padding: 3em 1em; 
+    }
+
+    .seccion-bienvenida h1{
+        font-size: 2.5em;
+    }
+    .seccion-bienvenida p{
+        font-size: 1em;
+        max-width: 90%;
+    }
+    
+    .seccion-login{
+        border-radius: 0 0 20px 20px;
+        padding: 30px 20px;
+    }
+    .seccion-login h2{
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+    .seccion-login form {
+        max-width: 400px;
+    }
+    .grupo-input input{
+        padding: 12px 12px 12px 45px; 
+    }
+    
+    .shape {
+        display: none;
+    }
+}
+
+
+

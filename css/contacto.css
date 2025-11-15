@@ -1,0 +1,172 @@
+:root {
+    --azul: #96B6C5;
+    --celeste: #ADC4CE;
+    --beige: #EEE0C9;
+    --blanco: #F1F0E8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--blanco);
+    color: #333;
+}
+
+
+main {
+    padding: 2rem;
+    background-image: linear-gradient(rgba(0,0,0,0.7)), url('../Imagenes/Imagen-de-fondo/fondo.jpg');
+    padding-bottom: 5rem;
+}
+
+main h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #ff6d00;;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.contacto {
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+    
+}
+
+.form-contacto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: rgba(255,255,255,0.1);
+    padding: 1rem;
+    border-radius: 10px;
+    color: #E0E0E0;
+}
+
+.form-contacto input, .form-contacto textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-contacto button[type="submit"] {
+    background: #ff6d00;
+    color: #E0E0E0;
+    border: none;
+    padding: 0.7rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.info-contacto {
+    flex: 1;
+    background-color: rgba(255,255,255,0.1);
+    padding: 1rem;
+    border-radius: 10px;
+    color: #E0E0E0;
+}
+
+.info-contacto iframe {
+    width: 100%;
+    height: 200px;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 10px;
+}
+
+a {
+
+    text-decoration: none;
+    color: inherit;
+
+}
+
+/* ventana que se envio el mensaje */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 300px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.modal h2 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.modal button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #ff6d00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+ 
+@media (min-width: 1024px) {
+
+
+    main {
+
+
+        padding: 5rem;
+
+    }
+
+   .form-contacto input, .form-contacto textarea {
+
+    width: 90%;
+
+}
+
+   .form-contacto textarea {
+
+    padding-bottom: 4rem;
+
+}
+
+.form-contacto button[type="submit"] {
+   margin-top: 3rem;
+
+}
+
+main h1 {
+
+    padding-bottom: 5rem;
+
+
+}
+
+.info-contacto {
+
+
+    padding-bottom: 4rem;
+
+}
+    
+}
+
