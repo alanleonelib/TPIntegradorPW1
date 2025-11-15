@@ -35,12 +35,12 @@ export class Navbar {
         </div>
 
         <div class="logo-contenedor">
-          <a href="index.html" class="logo-link">
-            <img src="Imagenes/Logos/logo5.png" alt="Logo" class="logo">
+          <a href="/TPIntegradorPW1/index.html" class="logo-link">
+            <img src="/TPIntegradorPW1/Imagenes/Logos/logo5.png" alt="Logo" class="logo">
           </a>
         </div>
 
-        <a class="carrito" href="html/carrito.html">
+        <a class="carrito" href="/TPIntegradorPW1/html/carrito.html">
           <i class="fa-solid fa-cart-shopping"></i>
           <span class="contador">0</span>
         </a>
@@ -83,7 +83,7 @@ export class Navbar {
     if (!listContainer) return;
 
     items.forEach((item) => {
-      listContainer.innerHTML += `<li><a href="${item.link}">${item.text}</a></li>`;
+      listContainer.innerHTML += `<li><a href="/TPIntegradorPW1/${item.link}">${item.text}</a></li>`;
     });
   }
 }
