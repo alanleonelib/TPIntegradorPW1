@@ -26,7 +26,7 @@ export class Navbar {
                 </div>
               `
               : `
-                <a href="/TPIntegradorPW1/html/Login/login.html">
+                <a href="./html/Login/login.html">
                   <i class="fa-regular fa-user"></i>
                   <span class="acceder">Acceder</span>
                 </a>
