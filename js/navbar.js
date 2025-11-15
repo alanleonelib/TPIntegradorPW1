@@ -2,7 +2,7 @@ export class Navbar {
   constructor() {
     const pathParts = window.location.pathname.split("/").filter(Boolean);
     const depth = pathParts.length - 2;
-    this.base = "../".repeat(Math.max(0, depth));
+    this.base = "../".repeat(depth);
   }
 
   render() {
