@@ -83,7 +83,7 @@ export class Navbar {
     if (!listContainer) return;
 
     items.forEach((item) => {
-      listContainer.innerHTML += `<li><a href="/TPIntegradorPW1/${item.link}">${item.text}</a></li>`;
+      listContainer.innerHTML += `<li><a href="${item.link}">${item.text}</a></li>`;
     });
   }
 }
